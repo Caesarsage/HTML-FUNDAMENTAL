@@ -13,7 +13,6 @@ var dragStart = function(e) {
   e.dataTransfer.effectAllowed = 'move';
   sourceContainerId = this.parentElement.id;
 };
-
 var cancel = function(e) {
   if (e.preventDefault) e.preventDefault();
   if (e.stopPropagation) e.stopPropagation();
