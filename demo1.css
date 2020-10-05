@@ -1,0 +1,39 @@
+input{
+    margin: 5px;
+    border: none;
+}
+input:focus:invalid,
+textarea:focus:invalid,
+select:focus:invalid{
+    color: #c33;
+    border-color: #c33;
+}
+input:focus:invalid:focus,
+textarea:focus:invalid:focus,
+select:focus:invalid:focus{
+    border-color: #c33;
+    -webkit-box-shadow: 0 0 6px #fcc;
+    -moz-box-shadow:0 0 6px #fcc;
+    box-shadow: 0 0 6px #fcc;
+}
+ .hide{
+    visibility: hidden;
+}
+span{
+    display: block;
+}
+input:valid + .invalid{
+    visibility: hidden;
+}
+input:invalid + .invalid{
+    visibility: visible;
+}
+input:required{
+    border-bottom: 2px solid #c33;
+}
+input:valid{
+    border-bottom: transparent;
+}
+.invalid{
+    color: #999;
+}

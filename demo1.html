@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom & form validation with psedo class</title>
+    <link rel="stylesheet" href="demo1.css">
+</head>
+<body>
+    <form action="" id="change-email-form" name="change-email-form">
+        <input type="text" id="username" name="username" pattern="[a-zA - Z]{5,} " placeholder="username" 
+        maxlength="30" required class="form-control"/>
+        <!-- <div class="invalid">
+
+        </div> -->
+        <!-- username validation-message -->
+        <div class="validation-messages">
+            <span data-rule="valueMissing" class="hide">
+                The username is required
+            </span>
+            <span data-rule="patternMismatch" class="hide">
+                characters only (min 5, max 30)
+            </span>
+        </div>
+
+        <input type="email" name="email" id="email" required>
+        <!-- <div class="valid">
+
+        </div> -->
+        <!-- when email validation occur the message is display -->
+        <div class="validation-messages">
+            <span data-rule="valueMissing" class="hide">
+                An email address is required
+            </span>
+            <span data-rule="typeMismatch" class="hide">
+                Special characters are not allowed
+            </span>
+        </div>
+        <div class="push-down-top">
+            <button type="button" class="btn btn-link">Cancel </button>
+            <button type="button" id="login-button" class="btn">Login</button>
+        </div>
+    </form>
+    <script src="demo1.js"></script>
+</body>
+</html>
